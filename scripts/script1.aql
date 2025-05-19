@@ -1,0 +1,14 @@
+-- Define a namespace (in Aerospike config, not in AQL)
+-- Create a set and insert some records
+
+INSERT INTO dev2.users (PK, name, age, email) VALUES ('user1', 'Alice', 30, 'alice@example.com')
+INSERT INTO dev2.users (PK, name, age, email) VALUES ('user2', 'Bob', 25, 'bob@example.com')
+
+-- Query all users
+SELECT * FROM dev2.users
+
+-- Query users with filter
+SELECT * FROM dev2.users WHERE age > 26
+
+-- Delete a record
+DELETE FROM dev2.users WHERE PK = 'user1'
