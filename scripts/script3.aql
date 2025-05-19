@@ -1,0 +1,6 @@
+-- Aerospike namespace: test, set: uat_orders
+
+INSERT INTO dev2.uat_orders (PK, customer_name, total_amount, order_date) VALUES ('1', 'Eve', 199.99, '2025-05-01')
+INSERT INTO dev2.uat_orders (PK, customer_name, total_amount, order_date) VALUES ('2', 'Frank', 49.50, '2025-05-05')
+
+SELECT * FROM dev2.uat_orders
